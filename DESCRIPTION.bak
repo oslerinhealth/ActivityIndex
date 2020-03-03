@@ -16,16 +16,10 @@ Description: Reads raw 'accelerometry' from 'GT3X+' data and plain
 License: GPL-3
 Depends: R (>= 2.10)
 Imports: matrixStats, data.table, utils, R.utils
-Suggests: 
-    knitr,
-    testthat,
-    graphics,
-    rmarkdown,
-    covr
+Suggests: knitr, testthat, graphics, rmarkdown
 LazyData: true
 LazyLoad: true
 VignetteBuilder: knitr
 RoxygenNote: 7.0.2
 Encoding: UTF-8
-Repository: Oslerinhealth
-biocViews: 
+Remotes:
