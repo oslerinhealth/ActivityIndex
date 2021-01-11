@@ -71,6 +71,7 @@ before_install:
   - echo "Package Name is $PACKAGE_NAME"
   - setup_python 3.6 false ;
   - install_python_requirements ;
+  - reticulate_install_python_requirements ;
   - R CMD javareconf ;
 after_success: dump_logs
 after_failure: dump_logs
@@ -100,4 +101,4 @@ after_deploy:
     && -z "${run_coverage}" ]]; then echo 'covr::coveralls(type = "all", quiet = FALSE)'
     > osler_covr.R ; travis_wait 100 Rscript osler_covr.R ; rm osler_covr.R ; fi
 
-# neuroc.deps commit id:c8c2628
+# neuroc.deps commit id:c18de5f
